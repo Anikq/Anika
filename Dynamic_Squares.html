@@ -9,10 +9,7 @@
 	and appends it to the body element.
 */
 function makeSquare(size, color){
-	var val = document.getElementById('inputNumber').value;
-	// Writes the comment in the div with id "result":
-	var result="";
-	for (var i=0; i<0;i++)
+
 
 	// Creates a new div element:
 	var div = document.createElement("div");
@@ -34,7 +31,9 @@ function addSquares(){
 	var val1 = document.getElementById('inputNumber').value;
 		var val2 = document.getElementById('inputColor').value;
 		var val3 = document.getElementById('inputSize').value;
-	makeSquare(2, "red");
+
+	for (var i=0; i<val1; i++)
+	{makeSquare(val3, val2);}
 }
 
 </script>
