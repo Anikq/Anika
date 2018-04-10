@@ -2,26 +2,26 @@
 <html>
 
 <head>
-
+<link rel="stylesheet" type="text/css" href="myStyles.css">
 <script>
 function repeatMe(){
   // Gets the value of the text field:
-  var val = document.getElementById('inputField').value;
+  var val1 = document.getElementById('inputField').value;
+    var val2 = document.getElementById('inputField2').value;
   // Writes the comment in the div with id "result":
-  var result="";
-  for (var i=0; i<10;i++){
-    result +=val+"<br/>";
-  }
+  var result=val1*val2;
+
   document.getElementById('result').innerHTML = result;
 }
 </script>
 
 <body>
-
-<h1> Ten times more </h1>
-<p> Write something in the text field and click the button.</p>
+<a href="index.html">Back</a>
+<h1> Number Multiplicator </h1>
+<p> Write a number in the text field and click the button.</p>
 
 <input type="text" id="inputField">
+<input type="text" id="inputField2">
 <button onclick="repeatMe()">Repeat me!</button>
 
 <p> Output: </p>
