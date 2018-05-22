@@ -4,11 +4,18 @@
   <link rel="stylesheet" type="text/css" href="myStyles.css">
   <script>
 	function myArray(){
-		alert("it doesn't work");
+
       var peopleNames = ["Luc","Mathew", "Matti", "Sanna", "Anders", "Mauricette"];
-      for (var i=0; i<peopleNames.length; i++){
-        var result +=peopleNames[i];
-      }
+			var result = "";
+			for (var i=0; i<peopleNames.length; i++){
+
+				if (i===peopleNames.length-2){
+				      result +=peopleNames[i] + " and ";
+        }
+					else (i===peopleNames.length-1) {
+						result +=peopleNames[i] + ",";
+					}
+				}
       return result;
     }
   </script>
